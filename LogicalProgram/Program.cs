@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("Select program \n1.Fibonacci series\n2 Given Number is Perfect or Not\n3.Enter the number to check either its Prime num or not");
+                Console.WriteLine("Select program \n1.Fibonacci series\n2 Given Number is Perfect or Not\n3.Enter the number to check either its Prime num or not\n4. Reverse Number");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -22,6 +22,10 @@
                         PrimeNumber primeNumber = new PrimeNumber();    
                         primeNumber.PrimeNumCheck();
                         break;
+                    case 4:
+                        ReverseNumber reverseNumber = new ReverseNumber();
+                        reverseNumber.RevNumber();
+                        break ; 
                 }
             }
         }
