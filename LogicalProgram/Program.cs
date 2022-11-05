@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("Select program \n1.Fibonacci series\n2 Given Number is Perfect or Not\n3.Enter the number to check either its Prime num or not\n4. Reverse Number\n5.Coupan Number\n6.Stopwatch Program\n7.Day Of The Week");
+                Console.WriteLine("Select program \n1.Fibonacci series\n2 Given Number is Perfect or Not\n3.Enter the number to check either its Prime num or not\n4. Reverse Number\n5.Coupan Number\n6.Stopwatch Program\n7.Day Of The Week\n8.Temperatur Conversion");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -37,6 +37,10 @@
                     case 7:
                         GregorianCalendar gregorianCalendar = new GregorianCalendar();
                         gregorianCalendar.DayOfWeek();
+                        break;
+                    case 8:
+                        TemperaturConversion temperaturConversion = new TemperaturConversion();
+                        temperaturConversion.TempConversion();
                         break;
                 }
             }
